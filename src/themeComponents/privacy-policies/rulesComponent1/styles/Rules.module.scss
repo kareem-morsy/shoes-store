@@ -1,0 +1,48 @@
+.rulesSection {
+  :global {
+    margin: 80px 0px;
+    .rule-unit {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #d9d9d9;
+      margin: 30px 0px;
+      h4 {
+        color: #302f2e;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        [data-theme = "dark"] &{
+          color: #fff;
+        }
+      }
+
+      p {
+        color: #444;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+        [data-theme = "dark"] &{
+          color: #d9d9d9;
+        }
+      }
+
+      ul {
+        list-style-type: square;
+        padding-right: 15px;
+        margin: 15px 0px;
+        li {
+          color: #444;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 21px;
+          [data-theme = "dark"] &{
+          color: #d9d9d9;
+        }
+        }
+      }
+
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}

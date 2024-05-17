@@ -1,0 +1,269 @@
+.sallaSection {
+  :global {
+    width: 100%;
+    margin: 80px 0px;
+
+    table {
+      width: 100%;
+      border-radius: 10px;
+      background: #f8f9fb;
+      tr:last-child {
+        border-bottom: none;
+      }
+      tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        padding: 25px;
+      }
+      .row1 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+      }
+
+      th {
+        text-align: center;
+        padding: 30px;
+      }
+      td {
+        text-align: center;
+        .close-icon {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: none;
+          background-color: transparent;
+        }
+      }
+      .product-details {
+        display: flex;
+        gap: 15px;
+        .product-img {
+          width: 75px;
+          height: 75px;
+          border-radius: 12px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+          }
+        }
+
+        .product-content {
+          padding: 10px 0px;
+          h6 {
+            color: #302f2e;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          p {
+            color: #7e7e7e;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .price {
+        color: #404040;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .size {
+        color: #323232;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .counter {
+        display: flex;
+        border-radius: 12px;
+        background: #fff;
+        width: 150px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        button,
+        span {
+          width: 50px;
+          height: 45px;
+          border: none;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #302f2e;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .pay-card {
+      width: 100%;
+      border-radius: 10px;
+      background: #f8f9fb;
+      padding: 30px;
+      .pay-details {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        padding: 25px 0px;
+        h4 {
+          color: #302f2e;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        p {
+          color: #302f2e;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+
+      .pay-options {
+        padding: 30px 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        h4 {
+          color: #302f2e;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 30px;
+        }
+
+        .form-group {
+          margin-bottom: 15px;
+          label {
+            display: flex;
+            gap: 8px;
+            span {
+              color: #302f2e;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        h6 {
+          color: #088114;
+          font-size: 12px;
+          font-weight: 600;
+          margin: 15px 0px;
+        }
+      }
+
+      .total-pay {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+        h3 {
+          color: #302f2e;
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        p {
+          color: #302f2e;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .form-check-input:checked {
+        background-color: #ef6351;
+        border-color: #ef6351;
+      }
+
+      .pay-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: #ef6351;
+        color: #fff;
+        text-align: right;
+        font-family: Somar;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        height: 55px;
+        width: 100%;
+        margin: 30x auto;
+      }
+    }
+
+    .voucher-section {
+      margin-top: 50px;
+      border-radius: 10px;
+      background: #f8f9fb;
+      padding: 30px;
+      [data-theme="dark"] & {
+        background-color: rgba(44, 48, 52, 0.95);
+      }
+      .voucher-title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-bottom: 1px solid #e6dace;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        h4 {
+          color: #302f2e;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        p {
+          color: #ef6351;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      form {
+        display: flex;
+        
+        margin-top: 30px;
+        gap: 15px;
+        .form-group {
+          width: 75%;
+          input {
+            border-radius: 6px;
+            background: #fff;
+            height: 55px;
+            width: 100%;
+          }
+        }
+
+        button {
+          width: 23%;
+          height: 55px;
+          border-radius: 12px;
+          background: #ef6351;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 600;
+          border: none;
+        }
+
+        @media (max-width: 767px) {
+          flex-wrap: wrap;
+          .form-group {
+            width: 100%;
+          }
+          button {
+            width: 65%;
+          }
+          input {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

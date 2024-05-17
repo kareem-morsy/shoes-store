@@ -1,0 +1,172 @@
+.blogSec :global {
+  margin: 100px 0px;
+}
+.blogSec :global .section-title {
+  color: #2B0000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+[data-theme=dark] .blogSec :global .section-title {
+  color: #fff;
+}
+.blogSec :global .section-title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #9C0646;
+  display: block;
+  margin: 15px auto;
+}
+.blogSec :global .blogSec-card {
+  margin-bottom: 35px;
+  transition: 0.3s;
+  width: 100%;
+}
+.blogSec :global .blogSec-card .blogSec-card-img {
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+  padding-top: 100%;
+}
+.blogSec :global .blogSec-card .blogSec-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  inset: 0;
+}
+.blogSec :global .blogSec-card .blogSec-card-img .img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.blogSec :global .blogSec-card .blog-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogSec :global .blogSec-card .blog-card-content .blog-card-details {
+  display: flex;
+  direction: ltr;
+}
+.blogSec :global .blogSec-card .blog-card-content .blog-card-details .writer,
+.blogSec :global .blogSec-card .blog-card-content .blog-card-details .blog-date {
+  display: flex;
+  margin: 22px 10px;
+}
+[data-theme=dark] .blogSec :global .blogSec-card .blog-card-content .blog-card-details .writer,
+[data-theme=dark] .blogSec :global .blogSec-card .blog-card-content .blog-card-details .blog-date {
+  color: #fff;
+}
+.blogSec :global .blogSec-card .blog-card-content .blog-card-details .writer p,
+.blogSec :global .blogSec-card .blog-card-content .blog-card-details .blog-date p {
+  margin: 0px 5px;
+}
+.blogSec :global .blogSec-card .blog-card-content .blog-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 11px auto;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+}
+[data-theme=dark] .blogSec :global .blogSec-card .blog-card-content .blog-title {
+  color: #fff;
+}
+.blogSec :global .blogSec-card .blog-card-content a {
+  background-color: #F4F5F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 149px;
+  height: 46px;
+  margin: 21px 0px;
+  color: #000000;
+  transition: 0.2s;
+}
+.blogSec :global .blogSec-card:hover {
+  transform: scale(1.03);
+}
+.blogSec :global .allBlogs {
+  margin: 35px auto;
+}
+.blogSec :global .allBlogs a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9c0646;
+  border: 1px solid #9c0646;
+  width: 148px;
+  height: 45px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+.blogSec :global .allBlogs a:hover {
+  background-color: #9c0646;
+  color: #fff;
+}
+[data-theme=dark] .blogSec :global .allBlogs a {
+  color: #fff;
+  border: 1px solid #fff;
+}
+[data-theme=dark] .blogSec :global .allBlogs a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.blogSec :global .blogs-swiper {
+  display: none;
+}
+@media (max-width: 991px) {
+  .blogSec :global .blogs-swiper {
+    display: block;
+  }
+}
+.blogSec :global .blogs-desktop {
+  display: block;
+}
+@media (max-width: 991px) {
+  .blogSec :global .blogs-desktop {
+    display: none;
+  }
+}
+.blogSec :global .product-next,
+.blogSec :global .product-prev {
+  background-color: transparent;
+  border: 1px solid #9c0646;
+  display: inline-flex;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 30px;
+}
+[dir=ltr] .blogSec :global .product-next,
+[dir=ltr] .blogSec :global .product-prev {
+  transform: rotate(180deg);
+}
+[data-theme=dark] .blogSec :global .product-next,
+[data-theme=dark] .blogSec :global .product-prev {
+  border: 1px solid #fff;
+}
+[data-theme=dark] .blogSec :global .product-next svg,
+[data-theme=dark] .blogSec :global .product-prev svg {
+  filter: brightness(0) invert(1);
+}
+.blogSec :global .swiper-bttns {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}/*# sourceMappingURL=BlogSection.module.css.map */

@@ -1,0 +1,32 @@
+.offerSilder :global {
+  margin: 80px 0px;
+}
+.offerSilder :global .slide {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 46%;
+}
+.offerSilder :global .slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.offerSilder :global .swiper-pagination-bullets {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+.offerSilder :global .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(239, 99, 81, 0.5);
+}
+.offerSilder :global .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #ef6351;
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=Style.module.css.map */

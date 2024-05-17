@@ -1,0 +1,107 @@
+.features {
+  :global {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    border-radius: 12px;
+    background: #fff6f5;
+    width: 80%;
+    margin: 90px auto -140px auto;
+    padding: 65px 55px;
+
+    [data-theme="dark"] & {
+      background: #302f2e;
+    }
+
+    @media (max-width: 767px) {
+      padding: 15px 10px;
+    }
+
+    .features-cards {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      @media (max-width: 1199px) {
+        flex-wrap: wrap;
+      }
+
+      .features-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 21px;
+        position: relative;
+
+        @media (max-width: 767px) {
+          margin: 15px 7px;
+          width: 100%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+          margin: 15px 7px;
+          width: 42%;
+        }
+
+        .features-img {
+          border-radius: 10px;
+          border: 1px solid #eaeaea;
+          background: #fff;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .features-text {
+          color: #ffffff;
+          text-align: center;
+
+          h6 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #302f2e;
+            [data-theme="dark"] & {
+              color: #fff;
+            }
+          }
+
+          p {
+            color: #444;
+            font-size: 14px;
+            font-weight: 400;
+            [data-theme="dark"] & {
+              color: #f3ebeb;
+            }
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 45px;
+          display: block;
+          background: #ef6351;
+          left: -41px;
+          top: 30px;
+
+          [dir="ltr"] & {
+            left: auto;
+            right: -41px;
+          }
+
+          @media (max-width: 1024px) {
+            display: none;
+          }
+        }
+
+        &:last-child::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

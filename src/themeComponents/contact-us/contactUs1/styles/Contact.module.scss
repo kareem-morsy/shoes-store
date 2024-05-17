@@ -1,0 +1,209 @@
+.contactUs {
+  :global {
+    .contact-map {
+      width: 100%;
+      height: 500px;
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .contact-form {
+      margin: 80px 0px;
+      .contact-form-details {
+        .title {
+          width: 95%;
+          position: relative;
+          margin-bottom: 45px;
+          &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: rgba(36, 26, 4, 0.1);
+            position: absolute;
+            top: 55px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 170px;
+            height: 4px;
+            background: #ef6351;
+            margin-top: 21px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -26px;
+          }
+          h2 {
+            color: #302f2e;
+            font-size: 24px;
+            font-weight: 700;
+            [data-theme="dark"] & {
+              color: #fff;
+            }
+          }
+        }
+
+        p {
+          margin: 30px 0px;
+          color: #444;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.9;
+          margin: 15px 0px 30px 0px;
+          [data-theme="dark"] & {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        form {
+          input {
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+            height: 55px;
+            [data-theme="dark"] & {
+              background-color: transparent;
+            }
+            &::placeholder {
+              text-align: right;
+              padding: 10px 15px;
+              color: rgba(32, 32, 32, 0.5);
+              font-size: 14px;
+              font-weight: 300;
+              [data-theme="dark"] & {
+                color: rgba(255, 255, 255, 0.7);
+              }
+
+              [dir="ltr"] & {
+                float: left;
+              }
+            }
+          }
+          button {
+            border-radius: 10px;
+            background: #EF6351;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            width: 30%;
+            border: none;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @media (max-width: 991px) {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+
+    .contact-details {
+      margin: 65px 0px;
+
+      .contact-details-card {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        background: #f9f9fb;
+        padding: 32px 19px;
+        min-height: 165px;
+
+        
+        .card-icon {
+          width: 60px;
+          height: 60px;
+          border-radius: 6px;
+          background: #ef6351;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          [data-theme="dark"] & {
+            background-color: #aaa;
+          }
+        }
+
+        @media (max-width: 991px) {
+          margin-bottom: 50px;
+        }
+
+        .card-content {
+          width: 65%;
+          display: flex;
+          flex-direction: column;
+
+          h5 {
+            color: #302f2e;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            [data-theme="dark"] & {
+              color: #fff;
+            }
+          }
+
+          p {
+            color: #444;
+            font-size: 14px;
+            font-weight: 600;
+            [data-theme="dark"] & {
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+
+          .card-links {
+            display: flex;
+            flex-direction: column;
+            a {
+              color: #444;
+              font-size: 14px;
+              font-weight: 600;
+              margin-bottom: 5px;
+              [data-theme="dark"] & {
+                color: rgba(255, 255, 255, 0.6);
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 350px) {
+        padding: 50px 10px;
+        .card-icon {
+          width: 50px !important;
+          height: 50px !important;
+        }
+
+        .card-links {
+          a {
+            font-size: 14px !important;
+          }
+        }
+      }
+
+      @media (min-width: 351px) and (max-width: 991px) {
+        padding: 50px 30px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 50px 15px;
+        .card-content {
+          p {
+            font-size: 14px !important;
+          }
+        }
+
+        .contact-details-card {
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

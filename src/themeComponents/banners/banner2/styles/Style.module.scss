@@ -1,0 +1,46 @@
+.offerSilder {
+  :global {
+    margin: 80px 0px;
+    .slide {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      padding-top: 46%;
+      @media (max-width : 480px) {
+        padding-top: 75%;
+      }
+      img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .swiper-pagination-bullets {
+      width: 25%;
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(239, 99, 81, 0.5);
+        @media (max-width : 480px) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #ef6351;
+        width: 24px;
+        height: 24px;
+        @media (max-width : 480px) {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
